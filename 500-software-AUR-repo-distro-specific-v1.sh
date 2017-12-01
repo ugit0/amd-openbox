@@ -14,17 +14,19 @@ set -e
 ##################################################################################################################
 
 
-sh AUR/install-obmenu-generator-v*.sh
-
-sh AUR/install-xfce-slimlock-v*.sh
-
 sh AUR/install-gtk2-perl-v*.sh
 
 sh AUR/install-obkey-v*.sh
 
+sh AUR/install-obmenu-generator-v*.sh
+
 sh AUR/install-obmenu3-v*.sh
 
 sh AUR/install-perl-linux-desktopfiles-v*.sh
+
+sh AUR/install-xfce-slimlock-v*.sh
+
+sh AUR/install-yad-v*.sh
 
 echo "################################################################"
 echo "####        Software from AUR Repository installed        ######"
