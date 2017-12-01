@@ -53,6 +53,7 @@ sudo pacman -S lxrandr --noconfirm --needed
 sudo pacman -S nitrogen --noconfirm --needed
 sudo pacman -S qt4 --confirm --needed
 sudo pacman -S thunar --noconfirm --needed
+sudo pacman -S tint2 --noconfirm --needed
 sudo pacman -S slim --noconfirm --needed
 sudo pacman -S volumeicon  --noconfirm --needed
 sudo pacman -S xorg-xrandr --noconfirm --needed
