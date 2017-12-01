@@ -16,10 +16,9 @@ set -e
 echo "Everywhere Breeze-snow as cursor"
 echo "Change cursor if you want"
 
-sudo mkdir /usr/share/icons/default
-sudo cp -r Personal/settings/default/index.theme /usr/share/icons/default
+sudo cp -r Personal/settings/default/index.theme /usr/share/icons/default/
 
 
 echo "################################################################"
-echo "####                             Fix done                 ######"
+echo "####           TO SEE IT EFFECT YOU MUST LOG OFF          ######"
 echo "################################################################"
