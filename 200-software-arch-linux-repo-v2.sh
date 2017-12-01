@@ -149,7 +149,7 @@ sudo pacman -S --noconfirm --needed unace unrar zip unzip sharutils  uudeview  a
 
 #avoiding an error if you have installed conky-lua-nv and rerun this script later
 #that tries to install the conky package
-package="conky-lua-nv"
+package="conky-lua-archers"
 
 if pacman -Qi $package &> /dev/null; then
 
