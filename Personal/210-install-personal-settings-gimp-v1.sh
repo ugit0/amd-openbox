@@ -12,19 +12,20 @@ set -e
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
 ##################################################################################################################
-echo "#################################################"
-echo "If it feels like the downloads are too slow"
-echo "Stop the installation with CTRL + C"
-echo "and run the alias - mirror in the terminal"
-echo "#################################################"
-
-sudo pacman -Syyu
-sudo pacman -S lightdm lightdm-gtk-greeter --noconfirm --needed
-sudo pacman -S openbox --noconfirm --needed
-sudo systemctl enable lightdm.service -f
-sudo systemctl set-default graphical.target
 
 
-echo "Remove anything you do not like from the installed applications"
 
-#sudo pacman -R ...
+echo "Copy/pasting gimp scripts and themes"
+
+[ -d $HOME"/.gimp-2.8" ] || mkdir -p $HOME"/.gimp-2.8"
+[ -d $HOME"/.gimp-2.8/scripts" ] || mkdir -p $HOME"/.gimp-2.8/scripts"
+[ -d $HOME"/.gimp-2.8/themes" ] || mkdir -p $HOME"/.gimp-2.8/themes"
+
+cp settings/gimp/scripts/* ~/.gimp-2.8/scripts/
+cp -r settings/gimp/themes/* ~/.gimp-2.8/themes/
+
+
+
+echo "################################################################"
+echo "#########      gimp scripts and themes copied   ################"
+echo "################################################################"

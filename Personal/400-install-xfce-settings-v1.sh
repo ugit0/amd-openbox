@@ -12,19 +12,12 @@ set -e
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
 ##################################################################################################################
-echo "#################################################"
-echo "If it feels like the downloads are too slow"
-echo "Stop the installation with CTRL + C"
-echo "and run the alias - mirror in the terminal"
-echo "#################################################"
 
-sudo pacman -Syyu
-sudo pacman -S lightdm lightdm-gtk-greeter --noconfirm --needed
-sudo pacman -S openbox --noconfirm --needed
-sudo systemctl enable lightdm.service -f
-sudo systemctl set-default graphical.target
+echo "Installing xfce settings"
 
+[ -d $HOME"/.config/xfce4" ] || mkdir -p $HOME"/.config/xfce4"
+cp -rf settings/xfce4/* ~/.config/xfce4/
 
-echo "Remove anything you do not like from the installed applications"
-
-#sudo pacman -R ...
+echo "################################################################"
+echo "#########      xfce files copied                ################"
+echo "################################################################"
