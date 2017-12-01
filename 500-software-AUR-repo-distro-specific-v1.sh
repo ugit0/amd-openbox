@@ -14,9 +14,9 @@ set -e
 ##################################################################################################################
 
 
-sh AUR/install-obmenu-generator-aur-v*.sh
+sh AUR/install-obmenu-generator-v*.sh
 
-sh AUR/install-xfce-slimlock-aur-v*.sh
+sh AUR/install-xfce-slimlock-v*.sh
 
 sh AUR/install-gtk2-perl-v*.sh
 
