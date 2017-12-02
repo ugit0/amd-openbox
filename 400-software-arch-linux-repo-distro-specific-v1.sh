@@ -67,6 +67,10 @@ sudo pacman -S xfce4-settings --noconfirm --needed
 sudo pacman -S xfce4-screenshooter --noconfirm --needed
 sudo pacman -S xfce4-taskmanager --noconfirm --needed
 
+#remove file that xfce4-session makes to avoid confusion on oblogout
+
+sudo rm /usr/share/xsessions/xfce-desktop
+
 echo "################################################################"
 echo "####    Software from Arch Linux Repository installed     ######"
 echo "################################################################"
