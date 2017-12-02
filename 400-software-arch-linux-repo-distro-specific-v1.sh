@@ -63,14 +63,13 @@ sudo pacman -S xorg-xrandr --noconfirm --needed
 sudo pacman -S xfce4-appfinder --noconfirm --needed
 sudo pacman -S xfce4-clipman-plugin --noconfirm --needed
 sudo pacman -S xfce4-power-manager --noconfirm --needed
-sudo pacman -S xfce4-session --noconfirm --needed
 sudo pacman -S xfce4-settings --noconfirm --needed
 sudo pacman -S xfce4-screenshooter --noconfirm --needed
 sudo pacman -S xfce4-taskmanager --noconfirm --needed
 
-#remove file that xfce4-session makes to avoid confusion on oblogout
-
-sudo rm /usr/share/xsessions/xfce.desktop
+#Testing if we need xfce4-session
+#sudo pacman -S xfce4-session --noconfirm --needed
+#sudo rm /usr/share/xsessions/xfce.desktop
 
 echo "################################################################"
 echo "####    Software from Arch Linux Repository installed     ######"
