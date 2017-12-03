@@ -27,6 +27,8 @@ sh AUR-DS/install-perl-linux-desktopfiles-v*.sh
 
 sh AUR-DS/install-xfce-slimlock-v*.sh
 
+sh AUR/install-yad-v*.sh
+
 
 echo "################################################################"
 echo "####       Software from AUR-DS folder installed          ######"
