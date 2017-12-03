@@ -13,6 +13,8 @@ set -e
 #
 ##################################################################################################################
 
+echo "DESKTOP SPECIFIC APPLICATIONS"
+
 sh AUR/install-conky-lua-archers-v*.sh
 
 sh AUR/install-gtk2-perl-v*.sh
